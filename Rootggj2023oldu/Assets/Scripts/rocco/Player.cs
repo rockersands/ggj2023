@@ -5,10 +5,60 @@ using UnityEngine;
 public class Player : RaycastObject
 {
     public static int movesCounter;
+    [SerializeField]
+    private Transform headObject;
+    [Header("RootSprites")]
+    [SerializeField]
+    private Sprite straightRoot;
+    [SerializeField]
+    private Sprite cornerRoot;
     private List<GameObject> tailParts = new List<GameObject>();
     private List<RaycastHitWithDirection> cantMoveToTheseDirections = new List<RaycastHitWithDirection>();
     private PlayerMovement playerMovement;
     private bool finishedMove = true;
+    [SerializeField]
+    private Enumerables.directions lastDirection = Enumerables.directions.noDir;
+    public void AssignFirstDirection(int direction)
+    {
+        switch (direction)
+        {
+           // case Enumerables.directions.right(0):
+           //     headObject.eulerAngles = new Vector3(0, 0, 90);
+           //     break;
+           // case Enumerables.directions.left:
+           //     headObject.eulerAngles = new Vector3(0, 0, 270);
+           //     break;
+           // case Enumerables.directions.up:
+           //     headObject.eulerAngles = new Vector3(0, 0, 180);
+           //     break;
+           // case Enumerables.directions.down:
+           //     headObject.eulerAngles = new Vector3(0, 0, 0);
+           //     break;
+           // default:
+           //     break
+        }
+    }
+    public override void Start()
+    {
+        base.Start();
+        switch (lastDirection)
+        {
+            case Enumerables.directions.right:
+                headObject.eulerAngles = new Vector3(0, 0, 90);
+                break;
+            case Enumerables.directions.left:
+                headObject.eulerAngles = new Vector3(0, 0, 270);
+                break;
+            case Enumerables.directions.up:
+                headObject.eulerAngles = new Vector3(0, 0, 180);
+                break;
+            case Enumerables.directions.down:
+                headObject.eulerAngles = new Vector3(0, 0, 0);
+                break;
+            default:
+                break;
+        }
+    }
     #region Awake
     private void Awake()
     {
@@ -68,8 +118,7 @@ public class Player : RaycastObject
         if (!CanMoveToThisDirection(direction)) { AudioController.PlaySfx(AudioController.Sfx.stump); return; }
         if (ImmobableBoxInDirection(direction)) { AudioController.PlaySfx(AudioController.Sfx.stump); return; }
 
-        tailParts.Add(Instantiate(Resources.Load<GameObject>("Prefabs/Root"), transform.position, Quaternion.identity, null));
-
+        CreateCorrectTailPart(direction);
         GameEvents.instance.PlayerMoved(direction);
         AudioController.PlaySfx(AudioController.Sfx.move);
 
@@ -98,6 +147,132 @@ public class Player : RaycastObject
         movesCounter -= 1;
     }
     #endregion
+    private void CreateCorrectTailPart(Enumerables.directions newDirection)
+    {
+        if (lastDirection == Enumerables.directions.noDir)
+        {
+            lastDirection = Enumerables.directions.down;
+        }
+        GameObject tempTailObject = Instantiate(Resources.Load<GameObject>("Prefabs/Root"), transform.position, Quaternion.identity, null);
+        SpriteRenderer tempSpriteRend = tempTailObject.GetComponent<SpriteRenderer>();
+        tailParts.Add(tempTailObject);
+        Debug.Log("statmach");
+        switch (lastDirection)
+        {
+            case Enumerables.directions.right:
+                switch (newDirection)
+                {
+                    case Enumerables.directions.right:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 90);
+                        tempSpriteRend.sprite = straightRoot;
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 90);
+                        lastDirection = Enumerables.directions.right;
+                        break;
+                    case Enumerables.directions.up:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 180);
+                        tempSpriteRend.sprite = cornerRoot;
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 180);
+                        lastDirection = Enumerables.directions.up;
+                        break;
+                    case Enumerables.directions.down:
+                        Debug.Log("right down");
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, -90);
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 0);
+                        tempSpriteRend.sprite = cornerRoot;
+                        lastDirection = Enumerables.directions.down;
+                        break;
+                    case Enumerables.directions.noDir:
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case Enumerables.directions.left:
+                switch (newDirection)
+                {
+                    case Enumerables.directions.left:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 90);
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 270);
+                        tempSpriteRend.sprite = straightRoot;
+                        lastDirection = Enumerables.directions.left;
+                        break;
+                    case Enumerables.directions.up:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 90);
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 180);
+                        tempSpriteRend.sprite = cornerRoot;
+                        lastDirection = Enumerables.directions.up;
+                        break;
+                    case Enumerables.directions.down:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 0);
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 0);
+                        tempSpriteRend.sprite = cornerRoot;
+                        lastDirection = Enumerables.directions.down;
+                        break;
+                    case Enumerables.directions.noDir:
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case Enumerables.directions.up:
+                switch (newDirection)
+                {
+                    case Enumerables.directions.right:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 0);
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 90);
+                        tempSpriteRend.sprite = cornerRoot;
+                        lastDirection = Enumerables.directions.right;
+                        break;
+                    case Enumerables.directions.left:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, -90);
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 270);
+                        tempSpriteRend.sprite = cornerRoot;
+                        lastDirection = Enumerables.directions.left;
+                        break;
+                    case Enumerables.directions.up:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 0);
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 180);
+                        tempSpriteRend.sprite = straightRoot;
+                        lastDirection = Enumerables.directions.up;
+                        break;
+                    case Enumerables.directions.noDir:
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case Enumerables.directions.down:
+                switch (newDirection)
+                {
+                    case Enumerables.directions.right:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 90);
+                        tempSpriteRend.sprite = cornerRoot;
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 90);
+                        lastDirection = Enumerables.directions.right;
+                        break;
+                    case Enumerables.directions.left:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 180);
+                        tempSpriteRend.sprite = cornerRoot;
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 270);
+                        lastDirection = Enumerables.directions.left;
+                        break;
+                    case Enumerables.directions.down:
+                        tempTailObject.transform.eulerAngles = new Vector3(0, 0, 0);
+                        tempSpriteRend.sprite = straightRoot;
+                        headObject.transform.eulerAngles = new Vector3(0, 0, 0);
+                        lastDirection = Enumerables.directions.down;
+                        break;
+                    case Enumerables.directions.noDir:
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                break;
+        }
+        tailParts.Add(Instantiate(Resources.Load<GameObject>("Prefabs/Root"), transform.position, Quaternion.identity, null));
+    }
     #endregion
     [ContextMenu("ResetTail")]
     private void ResetTail()
