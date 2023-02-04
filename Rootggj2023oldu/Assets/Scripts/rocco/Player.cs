@@ -65,10 +65,14 @@ public class Player : RaycastObject
         if (movesCounter == 0)
             return;
         GameEvents.instance.PlayerTryingToMove();
-        if (!CanMoveToThisDirection(direction)) { return; }
-        if (ImmobableBoxInDirection(direction)) { return; }
+        if (!CanMoveToThisDirection(direction)) { AudioController.PlaySfx(AudioController.Sfx.stump); return; }
+        if (ImmobableBoxInDirection(direction)) { AudioController.PlaySfx(AudioController.Sfx.stump); return; }
+
         tailParts.Add(Instantiate(Resources.Load<GameObject>("Prefabs/Root"), transform.position, Quaternion.identity, null));
+
         GameEvents.instance.PlayerMoved(direction);
+        AudioController.PlaySfx(AudioController.Sfx.move);
+
         #region switch
         switch (direction)
         {

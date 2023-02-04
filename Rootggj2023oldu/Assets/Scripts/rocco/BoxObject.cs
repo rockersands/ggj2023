@@ -31,6 +31,7 @@ public class BoxObject : RaycastObject
     [ContextMenu("MoveToDirection")]
     private void MoveToDirection()
     {
+        AudioController.PlaySfx(AudioController.Sfx.moveBox);
         switch (directionToBeMovedTo)
         {
             case Enumerables.directions.right:
