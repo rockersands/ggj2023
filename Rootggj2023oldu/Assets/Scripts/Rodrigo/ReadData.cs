@@ -20,10 +20,11 @@ public class ReadData : MonoBehaviour
                     return constructDummyMap();
                 }
             
-                string[] data = csvFile[0].text.Split(new char[] { '\n' });
+                string[] data = csvFile[index].text.Split(new char[] { '\n' });
 
                 int rowCount = data.Length;
                 int colCount = data[0].Split(new char[] { ',' }).Length;
+
 
                 string[,] csvData = new string[rowCount, colCount];
 
