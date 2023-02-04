@@ -5,10 +5,9 @@ using TMPro;
 public class MovesCounterHandler : MonoBehaviour
 {
     public TMP_Text MovesCounterText;
-    public int moves;
+    public static int moves;
     void Start()
     {
-        Player.movesCounter = moves;
         GameEvents.instance.playerMoved_Event += UpdateMovesCounterText;
     }
     private void UpdateMovesCounterText(Enumerables.directions meh)
