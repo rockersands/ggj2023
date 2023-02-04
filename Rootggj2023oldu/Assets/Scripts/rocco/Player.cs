@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : RaycastObject
 {
-    public static int movesCounter;
+    private int movesCounter;
     [SerializeField]
     private Transform headObject;
     [Header("RootSprites")]
@@ -18,6 +18,11 @@ public class Player : RaycastObject
     private bool finishedMove = true;
     [SerializeField]
     private Enumerables.directions lastDirection = Enumerables.directions.noDir;
+
+    public void ChangeMoveCount(int moveCount)
+    {
+        movesCounter = moveCount;
+    }
     public void AssignFirstDirection(int direction)
     {
         switch (direction)
