@@ -22,19 +22,19 @@ public class Player : RaycastObject
     {
         switch (direction)
         {
-           case 0:
+           case 1:
                headObject.eulerAngles = new Vector3(0, 0, 90);
                 lastDirection = Enumerables.directions.right;
                break;
-           case 1:
+           case 0:
                headObject.eulerAngles = new Vector3(0, 0, 270);
                 lastDirection = Enumerables.directions.left;
                 break;
-           case 2:
+           case 3:
                headObject.eulerAngles = new Vector3(0, 0, 180);
                 lastDirection = Enumerables.directions.down;
                 break;
-           case 3:
+           case 2:
                headObject.eulerAngles = new Vector3(0, 0, 0);
                 lastDirection = Enumerables.directions.up;
                 break;
