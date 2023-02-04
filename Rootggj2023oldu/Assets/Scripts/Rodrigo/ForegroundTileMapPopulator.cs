@@ -37,7 +37,7 @@ public class ForegroundTileMapPopulator : MonoBehaviour
         int columns = csvData.GetLength(1);
 
         int direction = 0;
-        int.TryParse(csvData[0, rows - 1], out direction);
+        int.TryParse(csvData[rows-1, 0], out direction);
 
         for (int i = 0; i < rows-1; i++)
         {
@@ -50,10 +50,10 @@ public class ForegroundTileMapPopulator : MonoBehaviour
                     continue;
                 else
                 {
-                    Vector3Int cellPosition = new Vector3Int(columns - j - 1, rows - i - 1, 1);
+                    Vector3Int cellPosition = new Vector3Int(columns - j - 1, rows - i - 2, 1);
                     Vector3 cellCenter = tilemap.GetCellCenterLocal(cellPosition);
 
-                    if(index == 2)
+                    if(index == 1)
                     {
                         GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
                         spawnedObject.GetComponent<Player>().AssignFirstDirection(direction);
