@@ -39,12 +39,16 @@ public class ForegroundTileMapPopulator : MonoBehaviour
         int direction = 0;
         int.TryParse(csvData[rows-1, 0], out direction);
 
+        int movesData = 0;
+        int.TryParse(csvData[rows - 1, 1], out movesData);
+
         for (int i = 0; i < rows-1; i++)
         {
             for(int j = 0; j < columns; j++) 
             {
                 int index = new int();
                 index = int.Parse(csvData[i, j]);
+                
 
                 if (index == 5)
                     continue;
@@ -57,6 +61,7 @@ public class ForegroundTileMapPopulator : MonoBehaviour
                     {
                         GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
                         spawnedObject.GetComponent<Player>().AssignFirstDirection(direction);
+                        spawnedObject.GetComponent<MovesCounterHandler>().moves = movesData;
                         spawnedObject.transform.localPosition = cellCenter;
                     }
                     else
