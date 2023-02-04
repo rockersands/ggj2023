@@ -22,20 +22,24 @@ public class Player : RaycastObject
     {
         switch (direction)
         {
-           // case Enumerables.directions.right(0):
-           //     headObject.eulerAngles = new Vector3(0, 0, 90);
-           //     break;
-           // case Enumerables.directions.left:
-           //     headObject.eulerAngles = new Vector3(0, 0, 270);
-           //     break;
-           // case Enumerables.directions.up:
-           //     headObject.eulerAngles = new Vector3(0, 0, 180);
-           //     break;
-           // case Enumerables.directions.down:
-           //     headObject.eulerAngles = new Vector3(0, 0, 0);
-           //     break;
-           // default:
-           //     break
+           case 0:
+               headObject.eulerAngles = new Vector3(0, 0, 90);
+                lastDirection = Enumerables.directions.right;
+               break;
+           case 1:
+               headObject.eulerAngles = new Vector3(0, 0, 270);
+                lastDirection = Enumerables.directions.left;
+                break;
+           case 2:
+               headObject.eulerAngles = new Vector3(0, 0, 180);
+                lastDirection = Enumerables.directions.down;
+                break;
+           case 3:
+               headObject.eulerAngles = new Vector3(0, 0, 0);
+                lastDirection = Enumerables.directions.up;
+                break;
+           default:
+                break;
         }
     }
     public override void Start()
