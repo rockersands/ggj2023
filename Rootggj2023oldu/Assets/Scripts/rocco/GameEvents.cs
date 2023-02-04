@@ -14,9 +14,9 @@ public class GameEvents : MonoBehaviour
     }
     #endregion
     public event Action playerTryingToMove_Event;
-    public event Action<RaycastHitWithDirection.directions> playerMoved_Event;
+    public event Action<Enumerables.directions> playerMoved_Event;
     [ContextMenu("playerMoved")]
-    public void PlayerMoved(RaycastHitWithDirection.directions playerMovingDirection)
+    public void PlayerMoved(Enumerables.directions playerMovingDirection)
     {
         playerMoved_Event?.Invoke(playerMovingDirection);
     }

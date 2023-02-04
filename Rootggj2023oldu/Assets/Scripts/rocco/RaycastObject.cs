@@ -14,11 +14,14 @@ public class RaycastObject : MonoBehaviour
     public RaycastHit hitInfoRight, hitInfoDown, hitInfoLeft, hitInfoUp;
     public virtual void Start()
     {
-        myRayCastHits.Add(new RaycastHitWithDirection(RaycastHitWithDirection.directions.right,hitInfoRight));
-        myRayCastHits.Add(new RaycastHitWithDirection(RaycastHitWithDirection.directions.left, hitInfoLeft));
-        myRayCastHits.Add(new RaycastHitWithDirection(RaycastHitWithDirection.directions.up, hitInfoUp));
-        myRayCastHits.Add(new RaycastHitWithDirection(RaycastHitWithDirection.directions.down, hitInfoDown));
+        #region filling raycasts hit list
+        myRayCastHits.Add(new RaycastHitWithDirection(Enumerables.directions.right,hitInfoRight));
+        myRayCastHits.Add(new RaycastHitWithDirection(Enumerables.directions.left, hitInfoLeft));
+        myRayCastHits.Add(new RaycastHitWithDirection(Enumerables.directions.up, hitInfoUp));
+        myRayCastHits.Add(new RaycastHitWithDirection(Enumerables.directions.down, hitInfoDown));
+        #endregion
     }
+    #region drawRayCasts
     #region DrawRayCastRight
     public virtual void DrawRayCastRight()
     {
@@ -26,13 +29,13 @@ public class RaycastObject : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * rayCastDistance, Color.red);
             collisionedRight = true;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.right, hitInfoRight.transform);
+            ModifyRaycastWithDir(Enumerables.directions.right, hitInfoRight.transform);
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.right) * rayCastDistance, Color.green);
             collisionedRight = false;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.right, null);
+            ModifyRaycastWithDir(Enumerables.directions.right, null);
         }
     }
     #endregion
@@ -43,13 +46,13 @@ public class RaycastObject : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * rayCastDistance, Color.red);
             collisionedDown = true;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.down, hitInfoDown.transform);
+            ModifyRaycastWithDir(Enumerables.directions.down, hitInfoDown.transform);
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * rayCastDistance, Color.green);
             collisionedDown = false;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.down, null);
+            ModifyRaycastWithDir(Enumerables.directions.down, null);
         }
     }
     #endregion
@@ -61,13 +64,13 @@ public class RaycastObject : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * rayCastDistance, Color.red);
             Transform objectHitted = hitInfoLeft.transform;
             collisionedLeft = true;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.left, objectHitted);
+            ModifyRaycastWithDir(Enumerables.directions.left, objectHitted);
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * rayCastDistance, Color.green);
             collisionedLeft = false;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.left, null);
+            ModifyRaycastWithDir(Enumerables.directions.left, null);
         }
     }
     #endregion
@@ -78,17 +81,19 @@ public class RaycastObject : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.up) * rayCastDistance, Color.red);
             collisionedUp = true;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.up, hitInfoUp.transform);
+            ModifyRaycastWithDir(Enumerables.directions.up, hitInfoUp.transform);
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.up) * rayCastDistance, Color.green);
             collisionedUp = false;
-            ModifyRaycastWithDir(RaycastHitWithDirection.directions.up, null);
+            ModifyRaycastWithDir(Enumerables.directions.up, null);
         }
     }
     #endregion
-    public void ModifyRaycastWithDir(RaycastHitWithDirection.directions direction,Transform transformHit)
+    #endregion
+    #region ModifyRaycastWithDir
+    public void ModifyRaycastWithDir(Enumerables.directions direction,Transform transformHit)
     {
         foreach (RaycastHitWithDirection item in myRayCastHits)
         {
@@ -99,16 +104,16 @@ public class RaycastObject : MonoBehaviour
             }
         }
     }
+    #endregion
 }
 public class RaycastHitWithDirection
 {
-    public RaycastHitWithDirection(directions direction, RaycastHit raycastHit)
+    public RaycastHitWithDirection(Enumerables.directions direction, RaycastHit raycastHit)
     {
         myDirection = direction;
         myRayCastHit = raycastHit;
     }
-    public enum directions {right,left,up,down, noDir}
-    public directions myDirection;
+    public Enumerables.directions myDirection;
     public RaycastHit myRayCastHit;
     public Transform transformHitted;
 }

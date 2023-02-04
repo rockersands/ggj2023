@@ -4,25 +4,35 @@ using UnityEngine;
 
 public class Player : RaycastObject
 {
+    public static int movesCounter;
+    private List<GameObject> tailParts = new List<GameObject>();
     private List<RaycastHitWithDirection> cantMoveToTheseDirections = new List<RaycastHitWithDirection>();
     private PlayerMovement playerMovement;
     private bool finishedMove = true;
+    #region Awake
     private void Awake()
     {
         playerMovement = new PlayerMovement();
     }
+    #endregion
+    #region on enable
     private void OnEnable()
     {
         playerMovement.Enable();
     }
+    #endregion
+    #region ondisable
     private void OnDisable()
     {
         playerMovement.Disable();
     }
+    #endregion
+    #region update
     private void Update()
     {
         Movement();
     }
+    #endregion
     #region Movement
     private void Movement()
     {
@@ -30,58 +40,71 @@ public class Player : RaycastObject
         if (move == Vector2.zero) { finishedMove = true; }
         if (!finishedMove) { return; }
         TriggerRaycasts();
-        #region left
+        #region directions
         if (move.x < 0)
         {
-            Debug.Log("1");
-            GameEvents.instance.PlayerTryingToMove();
-            Debug.Log("2");
-            if (!CanMoveToThisDirection(RaycastHitWithDirection.directions.left)) { return; }
-            Debug.Log("3");
-            if (ImmobableBoxInDirection(RaycastHitWithDirection.directions.left)) { return; }
-            Debug.Log("4");
-            GameEvents.instance.PlayerMoved(RaycastHitWithDirection.directions.left);
-            Debug.Log("5");
-            transform.position += Vector3.left;
-            Debug.Log("6");
-            finishedMove = false;
+            Moving(Enumerables.directions.left);
         }
-        #endregion
-        #region right
         else if (move.x > 0)
         {
-            GameEvents.instance.PlayerTryingToMove();
-            if (!CanMoveToThisDirection(RaycastHitWithDirection.directions.right)) { Debug.Log("cantMove right"); return; }
-            if (ImmobableBoxInDirection(RaycastHitWithDirection.directions.right)) { Debug.Log("immovable right"); return; }
-            GameEvents.instance.PlayerMoved(RaycastHitWithDirection.directions.right);
-            transform.position += Vector3.right;
-            finishedMove = false;
+            Moving(Enumerables.directions.right);
         }
-        #endregion
-        #region down
         else if (move.y < 0)
         {
-            GameEvents.instance.PlayerTryingToMove();
-            if (!CanMoveToThisDirection(RaycastHitWithDirection.directions.down)) { Debug.Log("cantMove down"); return; }
-            if (ImmobableBoxInDirection(RaycastHitWithDirection.directions.down)) { Debug.Log("immovable down"); return; }
-            GameEvents.instance.PlayerMoved(RaycastHitWithDirection.directions.down);
-            transform.position += Vector3.down;
-            finishedMove = false;
+            Moving(Enumerables.directions.down);
         }
-        #endregion
-        #region up
         else if (move.y > 0)
         {
-            GameEvents.instance.PlayerTryingToMove();
-            if (!CanMoveToThisDirection(RaycastHitWithDirection.directions.up)) { return; }
-            if (ImmobableBoxInDirection(RaycastHitWithDirection.directions.up)) { return; }
-            GameEvents.instance.PlayerMoved(RaycastHitWithDirection.directions.up);
-            transform.position += Vector3.up;
-            finishedMove = false;
+            Moving(Enumerables.directions.up);
         }
         #endregion
     }
+    #region Moving
+    private void Moving(Enumerables.directions direction)
+    {
+        if (movesCounter == 0)
+            return;
+        GameEvents.instance.PlayerTryingToMove();
+        if (!CanMoveToThisDirection(direction)) { return; }
+        if (ImmobableBoxInDirection(direction)) { return; }
+        tailParts.Add(Instantiate(Resources.Load<GameObject>("Prefabs/Root"), transform.position, Quaternion.identity, null));
+        GameEvents.instance.PlayerMoved(direction);
+        #region switch
+        switch (direction)
+        {
+            case Enumerables.directions.right:
+                transform.position += Vector3.right;
+                break;
+            case Enumerables.directions.left:
+                transform.position += Vector3.left;
+                break;
+            case Enumerables.directions.up:
+                transform.position += Vector3.up;
+                break;
+            case Enumerables.directions.down:
+                transform.position += Vector3.down;
+                break;
+            case Enumerables.directions.noDir:
+                break;
+            default:
+                break;
+        }
+        #endregion
+        finishedMove = false;
+        movesCounter -= 1;
+    }
     #endregion
+    #endregion
+    [ContextMenu("ResetTail")]
+    private void ResetTail()
+    {
+        Debug.Log($"tail parts count  {tailParts.Count}");
+        foreach (var item in tailParts)
+        {
+            Destroy(item);
+        }
+    }
+    #region TriggerRaycasts
     private void TriggerRaycasts()
     {
         DrawRayCastDown();
@@ -89,90 +112,95 @@ public class Player : RaycastObject
         DrawRayCastRight();
         DrawRayCastUp();
     }
-    private bool ImmobableBoxInDirection(RaycastHitWithDirection.directions directionToMoveTo)
+    #endregion
+    #region ImmobableBoxInDirection
+    private bool ImmobableBoxInDirection(Enumerables.directions directionToMoveTo)
     {
         BoxObject tempBox = new BoxObject();
         switch (directionToMoveTo)
         {
-            case RaycastHitWithDirection.directions.right:
+            case Enumerables.directions.right:
                 if(hitInfoRight.transform == null) { return false; }
                 if (hitInfoRight.transform.CompareTag("Box"))
                     tempBox = hitInfoRight.transform.GetComponent<BoxObject>();
                 break;
-            case RaycastHitWithDirection.directions.left:
+            case Enumerables.directions.left:
                 if (hitInfoLeft.transform == null) { return false; }
                 if (hitInfoLeft.transform.CompareTag("Box"))
                     tempBox = hitInfoLeft.transform.GetComponent<BoxObject>();
                 break;
-            case RaycastHitWithDirection.directions.up:
-                if (hitInfoUp.transform == null) { Debug.Log("potato"); return false; }
+            case Enumerables.directions.up:
+                if (hitInfoUp.transform == null) { return false; }
                 if (hitInfoUp.transform.CompareTag("Box"))
                 {
                     Debug.Log("potato2");
                     tempBox = hitInfoUp.transform.GetComponent<BoxObject>();
                 }
                 break;
-            case RaycastHitWithDirection.directions.down:
+            case Enumerables.directions.down:
                 if (hitInfoDown.transform == null) { return false; }
                 if (hitInfoDown.transform.CompareTag("Box"))
                     tempBox = hitInfoDown.transform.GetComponent<BoxObject>();
                 break;
-            case RaycastHitWithDirection.directions.noDir:
+            case Enumerables.directions.noDir:
                 return false;
             default:
                 break;
         }
-        Debug.Log("hi");
         if (tempBox == null)
             return false;
         if (tempBox != null)
         {
-            Debug.Log(tempBox.movableBox);
             if (!tempBox.movableBox)
                 return true;
             else return false;
         }
         return false;
     }
-    private bool CanMoveToThisDirection(RaycastHitWithDirection.directions directionToMoveTo)
+    #endregion
+    #region CanMoveToThisDirection
+    private bool CanMoveToThisDirection(Enumerables.directions directionToMoveTo)
     {
-        TriggerRaycasts();
-        Debug.Log($"im going to move to {directionToMoveTo}");
+        #region switch
         switch (directionToMoveTo)
         {
-            case RaycastHitWithDirection.directions.right:
-                if(hitInfoRight.transform == null) { return true;}
+            case Enumerables.directions.right:
+                #region right
+                if (hitInfoRight.transform == null) { return true;}
                 if(hitInfoRight.transform.CompareTag("Obstacle") || hitInfoRight.transform.CompareTag("Border")
                    || hitInfoRight.transform.CompareTag("Root"))
                     return false;
                 else return true;
-            case RaycastHitWithDirection.directions.left:
-                Debug.Log("hola");
-                if (hitInfoLeft.transform == null) { Debug.Log("nothingLeft"); return true; }
-                Debug.Log("hola2");
+            #endregion
+            case Enumerables.directions.left:
+                #region left
+                if (hitInfoLeft.transform == null) {  return true; }
                 if (hitInfoLeft.transform.CompareTag("Obstacle") || hitInfoLeft.transform.CompareTag("Border")
                    || hitInfoLeft.transform.CompareTag("Root"))
-                {
-                    Debug.Log("somethingleftCantPass");
                     return false;
-                }
                 else return true;
-            case RaycastHitWithDirection.directions.up:
+            #endregion
+            case Enumerables.directions.up:
+                #region up
                 if (hitInfoUp.transform == null) { return true; }
                 if (hitInfoUp.transform.CompareTag("Obstacle") || hitInfoUp.transform.CompareTag("Border")
                    || hitInfoUp.transform.CompareTag("Root"))
                     return false;
                 else return true;
-            case RaycastHitWithDirection.directions.down:
+            #endregion
+            case Enumerables.directions.down:
+                #region down
                 if (hitInfoDown.transform == null) { return true; }
                 if (hitInfoDown.transform.CompareTag("Obstacle") || hitInfoDown.transform.CompareTag("Border")
                    || hitInfoDown.transform.CompareTag("Root"))
                     return false;
                 else return true;
-            case RaycastHitWithDirection.directions.noDir:
+            #endregion
+            case Enumerables.directions.noDir:
             default:
                 return false;
         }
-        return false;
+        #endregion
     }
+    #endregion
 }
