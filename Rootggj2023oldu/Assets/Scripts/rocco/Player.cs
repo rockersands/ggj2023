@@ -12,7 +12,7 @@ public class Player : RaycastObject
     private Sprite straightRoot;
     [SerializeField]
     private Sprite cornerRoot;
-    private List<GameObject> tailParts = new List<GameObject>();
+    private static List<GameObject> tailParts = new List<GameObject>();
     private List<RaycastHitWithDirection> cantMoveToTheseDirections = new List<RaycastHitWithDirection>();
     private PlayerMovement playerMovement;
     private bool finishedMove = true;
@@ -285,7 +285,7 @@ public class Player : RaycastObject
     }
     #endregion
     [ContextMenu("ResetTail")]
-    private void ResetTail()
+    public static void ResetTail()
     {
         Debug.Log($"tail parts count  {tailParts.Count}");
         foreach (var item in tailParts)
