@@ -14,5 +14,9 @@ public class MovesCounterHandler : MonoBehaviour
     {
         MovesCounterText.text = (moves -= 1).ToString();
     }
+    private void OnDisable()
+    {
+        GameEvents.instance.playerMoved_Event -= UpdateMovesCounterText;
+    }
 
 }

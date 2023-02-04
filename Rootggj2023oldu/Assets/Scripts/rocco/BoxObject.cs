@@ -16,6 +16,11 @@ public class BoxObject : RaycastObject
         GameEvents.instance.playerTryingToMove_Event += TriggerRaycasts;
         GameEvents.instance.playerMoved_Event += CheckIfPlayerIsMovingMe;
     }
+    private void OnDestroy()
+    {
+        GameEvents.instance.playerTryingToMove_Event -= TriggerRaycasts;
+        GameEvents.instance.playerMoved_Event -= CheckIfPlayerIsMovingMe;
+    }
     #region CheckIfPlayerIsMovingMe
     private void CheckIfPlayerIsMovingMe(Enumerables.directions PlayerMovingDirection)
     {
