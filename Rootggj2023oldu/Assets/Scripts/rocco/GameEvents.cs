@@ -13,10 +13,15 @@ public class GameEvents : MonoBehaviour
         else Destroy(this);
     }
     #endregion
+    public event Action playerTryingToMove_Event;
     public event Action<RaycastHitWithDirection.directions> playerMoved_Event;
     [ContextMenu("playerMoved")]
     public void PlayerMoved(RaycastHitWithDirection.directions playerMovingDirection)
     {
         playerMoved_Event?.Invoke(playerMovingDirection);
+    }
+    public void PlayerTryingToMove()
+    {
+        playerTryingToMove_Event?.Invoke();
     }
 }

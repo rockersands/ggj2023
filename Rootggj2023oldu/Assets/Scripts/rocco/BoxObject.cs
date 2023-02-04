@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class BoxObject : RaycastObject
 {
-    private bool movableBox;
+    public bool movableBox;
     private RaycastHitWithDirection.directions directionToBeMovedTo = RaycastHitWithDirection.directions.noDir;
     public override void Start()
     {
         base.Start();
+        movableBox = true;
+        GameEvents.instance.playerTryingToMove_Event += TriggerRaycasts;
         GameEvents.instance.playerMoved_Event += CheckIfPlayerIsMovingMe;
     }
+   
     private void CheckIfPlayerIsMovingMe(RaycastHitWithDirection.directions PlayerMovingDirection)
     {
-        if(PlayerMovingDirection == directionToBeMovedTo)
+        TriggerRaycasts();
+        if (PlayerMovingDirection == directionToBeMovedTo )
         {
+            Debug.Log("player moving me");
+           
             MoveToDirection();
         }
-        TriggerRaycasts();
     }
+    
     #region moveToDirection
 
     [ContextMenu("MoveToDirection")]
@@ -59,22 +65,23 @@ public class BoxObject : RaycastObject
     #region VerifyHitInfo
     private void VerifyHitInfo()
     {
-        bool hittingPlayer = false;
         foreach (RaycastHitWithDirection raycastWDirection in myRayCastHits)
         {
-            movableBox = false;
             if (raycastWDirection.transformHitted == null) { continue; }
 
             if(raycastWDirection.transformHitted.name == "Player")
             {
                 VerifyOposingDirection(raycastWDirection.myDirection);
+                return;
             }
         }
+        movableBox = true;
     }
     #endregion
     #region VerifyOposingDirection
     private void VerifyOposingDirection(RaycastHitWithDirection.directions hittingPlayerDirection)
     {
+        Debug.Log("VerifyOposingDirection");
         bool playerCanMoveMe = true;
         #region switch hittingPlayerDirection
         switch (hittingPlayerDirection)
@@ -83,8 +90,9 @@ public class BoxObject : RaycastObject
                 #region right
                 Debug.Log("touched the player on my right");
                 directionToBeMovedTo = RaycastHitWithDirection.directions.left;
-                if (hitInfoLeft.transform == null) { break; }
-                if (hitInfoLeft.collider.tag == "Obstacle" || hitInfoUp.collider.tag == "Box")
+                if (hitInfoLeft.transform == null) { movableBox = true; break; }
+                if (hitInfoLeft.collider.tag == "Obstacle" || hitInfoLeft.collider.tag == "Box"
+                     || hitInfoLeft.transform.CompareTag("Border"))
                     playerCanMoveMe = false;
                 #endregion
                 break;
@@ -92,8 +100,9 @@ public class BoxObject : RaycastObject
                 #region left
                 Debug.Log("touched the player on my left");
                 directionToBeMovedTo = RaycastHitWithDirection.directions.right;
-                if (hitInfoRight.transform == null) { break; }
-                if (hitInfoRight.collider.tag == "Obstacle" || hitInfoUp.collider.tag == "Box")
+                if (hitInfoRight.transform == null) { movableBox = true; break; }
+                if (hitInfoRight.collider.tag == "Obstacle" || hitInfoRight.collider.tag == "Box" 
+                    || hitInfoRight.transform.CompareTag("Border"))
                     playerCanMoveMe = false;
                 #endregion
                 break;
@@ -101,8 +110,9 @@ public class BoxObject : RaycastObject
                 #region up
                 Debug.Log("touched the player on my up");
                 directionToBeMovedTo = RaycastHitWithDirection.directions.down;
-                if (hitInfoDown.transform == null) { break; }
-                if (hitInfoDown.collider.tag == "Obstacle" || hitInfoUp.collider.tag == "Box")
+                if (hitInfoDown.transform == null) { movableBox = true; break; }
+                if (hitInfoDown.collider.tag == "Obstacle" || hitInfoDown.collider.tag == "Box"
+                    || hitInfoDown.transform.CompareTag("Border"))
                     playerCanMoveMe = false;
                 #endregion
                 break;
@@ -110,8 +120,9 @@ public class BoxObject : RaycastObject
                 #region down
                 Debug.Log("touched the player on my down");
                 directionToBeMovedTo = RaycastHitWithDirection.directions.up;
-                if (hitInfoUp.transform == null) { break; }
-                if (hitInfoUp.collider.tag == "Obstacle" || hitInfoUp.collider.tag == "Box")
+                if (hitInfoUp.transform == null) { movableBox = true; break; }
+                if (hitInfoUp.collider.tag == "Obstacle" || hitInfoUp.collider.tag == "Box"
+                     || hitInfoUp.transform.CompareTag("Border"))
                     playerCanMoveMe = false;
                 #endregion
                 break;
@@ -120,8 +131,15 @@ public class BoxObject : RaycastObject
         }
         #endregion
         if (!playerCanMoveMe)
+        {
+            Debug.Log($"{name} cant move");
             movableBox = false;
-        else movableBox = true;
+        }
+        else
+        {
+            Debug.Log($"{name} can move");
+            movableBox = true;
+        }
 
     }
     #endregion

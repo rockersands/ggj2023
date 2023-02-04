@@ -58,7 +58,6 @@ public class RaycastObject : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hitInfoLeft, rayCastDistance))
         {
-            Debug.Log($"with the left i hit {hitInfoLeft.transform.name}");
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.left) * rayCastDistance, Color.red);
             Transform objectHitted = hitInfoLeft.transform;
             collisionedLeft = true;
