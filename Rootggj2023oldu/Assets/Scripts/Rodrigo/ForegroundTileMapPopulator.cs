@@ -21,8 +21,9 @@ public class ForegroundTileMapPopulator : MonoBehaviour
      * 
      * */
     public GameObject[] activeObjects;
+    public List<GameObject> currentLevel = new List<GameObject>();
 
-    void Start()
+    public void Populate(int levelNum)
     {
         //Primero leemos el csv, tenemos que sacar una lista de csv y elegir el adecuado.
         ReadData reader = GetComponent<ReadData>();
@@ -31,7 +32,7 @@ public class ForegroundTileMapPopulator : MonoBehaviour
             Debug.Log("Error, reader not found");
             return;
         }
-        string[,] csvData = reader.ReadFromCSV(1);
+        string[,] csvData = reader.ReadFromCSV(levelNum);
 
         int rows = csvData.GetLength(0);
         int columns = csvData.GetLength(1);
@@ -61,14 +62,20 @@ public class ForegroundTileMapPopulator : MonoBehaviour
                     {
                         GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
                         spawnedObject.GetComponent<Player>().AssignFirstDirection(direction);
-                        spawnedObject.GetComponent<MovesCounterHandler>().moves = movesData;
+                        spawnedObject.GetComponent<Player>().ChangeMoveCount(movesData);
                         spawnedObject.transform.localPosition = cellCenter;
+
+                        currentLevel.Add(spawnedObject);
                     }
                     else
                     {
                         GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
                         spawnedObject.transform.localPosition = cellCenter;
-                    }                   
+
+                        currentLevel.Add(spawnedObject);
+                    }         
+                    
+
                 }
             }
         }
