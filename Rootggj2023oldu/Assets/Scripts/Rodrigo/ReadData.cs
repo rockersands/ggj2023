@@ -6,20 +6,21 @@ public class ReadData : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public string[,] ReadFromCSV(string filename)
+    public string[,] ReadFromCSV(int index)
     {
         try
         {
             if (Resources.LoadAll<TextAsset>($"levels/") != null)
             {
-                TextAsset csvFile = Resources.Load<TextAsset>($"levels/{ filename}");
-                if (csvFile == null)
+
+                TextAsset[] csvFile = Resources.LoadAll<TextAsset>("levels/");
+                if (csvFile[index]== null)
                 {
                     Debug.Log("Error, reader not found");
                     return constructDummyMap();
                 }
             
-                string[] data = csvFile.text.Split(new char[] { '\n' });
+                string[] data = csvFile[0].text.Split(new char[] { '\n' });
 
                 int rowCount = data.Length;
                 int colCount = data[0].Split(new char[] { ',' }).Length;

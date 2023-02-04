@@ -30,20 +30,24 @@ public class ForegroundTileMapPopulator : MonoBehaviour
             Debug.Log("Error, reader not found");
             return;
         }
-        string[,] csvData = reader.ReadFromCSV("1.csv");
+        string[,] csvData = reader.ReadFromCSV(0);
 
-        for(int i = 0; i < 10; i++)
+        int rows = csvData.GetLength(0);
+        int columns = csvData.GetLength(1);
+
+
+        for (int i = 0; i < rows; i++)
         {
-            for(int j = 0; j < 10; j++) 
+            for(int j = 0; j < columns; j++) 
             {
                 int index = new int();
                 index = int.Parse(csvData[i, j]);
 
                 if (index == 5)
-                    continue;
+                    break;
                 else
                 {
-                    Vector3Int cellPosition = new Vector3Int(i, j, -1);
+                    Vector3Int cellPosition = new Vector3Int(j, i, 1);
                     Vector3 cellCenter = tilemap.GetCellCenterLocal(cellPosition);
 
                     GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
