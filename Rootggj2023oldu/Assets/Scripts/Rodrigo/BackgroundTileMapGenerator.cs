@@ -11,14 +11,16 @@ public class BackgroundTileMapGenerator : MonoBehaviour
 
     private int[,] mapData =
     {
-        {1,1,1,1,1,1,1,1},
-        {1,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,1},
-        {1,0,0,0,0,0,0,1},
-        {1,1,1,1,1,1,1,1}
+        {1,1,1,1,1,1,1,1,1,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,0,0,0,0,0,0,0,0,1},
+        {1,1,1,1,1,1,1,1,1,1}
     };
 
     private void Start()
@@ -28,12 +30,12 @@ public class BackgroundTileMapGenerator : MonoBehaviour
 
     private void GenerateMap()
     {
-        for (int x = 0; x < 8; x++)
+        for (int x = 0; x < 10; x++)
         {
-            for (int y = 0; y < 8; y++)
+            for (int y = 0; y < 10; y++)
             {
                 Vector3Int p = new Vector3Int(x, y, 0);
-                if (x == 0 || y == 0 || x == 7 || y == 7)
+                if (x == 0 || y == 0 || x == 9 || y == 9)
                 {
                     tilemap.SetTile(p, tiles[1]);
                 }
