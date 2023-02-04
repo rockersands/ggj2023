@@ -291,6 +291,7 @@ public class Player : RaycastObject
         foreach (var item in tailParts)
         {
             Destroy(item);
+            
         }
     }
     #region TriggerRaycasts

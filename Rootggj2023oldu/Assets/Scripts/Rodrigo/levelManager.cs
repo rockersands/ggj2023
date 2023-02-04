@@ -51,6 +51,7 @@ public class levelManager : MonoBehaviour
 
     void CleanMap()
     {
+        Player.ResetTail();
         foreach (var item in populator.currentLevel)
         {
             Destroy(item);
