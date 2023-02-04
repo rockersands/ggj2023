@@ -47,7 +47,7 @@ public class ForegroundTileMapPopulator : MonoBehaviour
                     break;
                 else
                 {
-                    Vector3Int cellPosition = new Vector3Int(j, i, 1);
+                    Vector3Int cellPosition = new Vector3Int(columns-j-1, rows-i-1, 1);
                     Vector3 cellCenter = tilemap.GetCellCenterLocal(cellPosition);
 
                     GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
