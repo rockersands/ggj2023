@@ -11,12 +11,13 @@ public class ForegroundTileMapPopulator : MonoBehaviour
     public Tilemap tilemap;
     /*Los gameobjects van a ser los siguientes:
      * 
-     * 0)Nada
-     * 1)Terreno invisible e impasable
-     * 2)Posición inicial del jugador, siempre volteando hacia abajo
-     * 3)Cajas
-     * 4)Rocas que no se mueven y son impasables
-     * 5)Fin del nivel
+     * 
+     * 0)Terreno invisible e impasable
+     * 1)jugador, con su dirección inicial.
+     * 2)Cajas
+     * 3)Rocas que no se mueven y son impasables
+     * 4)Fin del nivel
+     * 5)Nada
      * 
      * */
     public GameObject[] activeObjects;
@@ -35,8 +36,10 @@ public class ForegroundTileMapPopulator : MonoBehaviour
         int rows = csvData.GetLength(0);
         int columns = csvData.GetLength(1);
 
+        int direction = 0;
+        int.TryParse(csvData[0, rows - 1], out direction);
 
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < rows-1; i++)
         {
             for(int j = 0; j < columns; j++) 
             {
@@ -44,14 +47,23 @@ public class ForegroundTileMapPopulator : MonoBehaviour
                 index = int.Parse(csvData[i, j]);
 
                 if (index == 5)
-                    break;
+                    continue;
                 else
                 {
-                    Vector3Int cellPosition = new Vector3Int(columns-j-1, rows-i-1, 1);
+                    Vector3Int cellPosition = new Vector3Int(columns - j - 1, rows - i - 1, 1);
                     Vector3 cellCenter = tilemap.GetCellCenterLocal(cellPosition);
 
-                    GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
-                    spawnedObject.transform.localPosition = cellCenter;
+                    if(index == 2)
+                    {
+                        GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
+                        spawnedObject.GetComponent<Player>().AssignFirstDirection(direction);
+                        spawnedObject.transform.localPosition = cellCenter;
+                    }
+                    else
+                    {
+                        GameObject spawnedObject = Instantiate(activeObjects[index], tilemap.transform);
+                        spawnedObject.transform.localPosition = cellCenter;
+                    }                   
                 }
             }
         }
