@@ -27,10 +27,9 @@ public class levelManager : MonoBehaviour
     void Start()
     {
         levelCount = 0;
-        LoadLevel();
     }
 
-    void LoadLevel()
+    public void LoadLevel()
     {
         GetComponent<ForegroundTileMapPopulator>().Populate(levelCount);
     }
