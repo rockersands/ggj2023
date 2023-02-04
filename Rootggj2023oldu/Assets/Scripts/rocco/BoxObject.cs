@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BoxObject : RaycastObject
 {
-    [HideInInspector]
+    // [HideInInspector]
+    private bool assignedThisFrame;
     public bool movableBox;
-    private Enumerables.directions directionToBeMovedTo = Enumerables.directions.noDir;
+    [SerializeField]
+    private Enumerables.directions directionToBeMovedTo;
     public override void Start()
     {
         base.Start();
@@ -17,7 +19,8 @@ public class BoxObject : RaycastObject
     #region CheckIfPlayerIsMovingMe
     private void CheckIfPlayerIsMovingMe(Enumerables.directions PlayerMovingDirection)
     {
-        TriggerRaycasts();
+        VerifyHitInfo();
+        Debug.Log($"moved to {directionToBeMovedTo} playermovingto {PlayerMovingDirection} ");
         if (PlayerMovingDirection == directionToBeMovedTo )
         {
             Debug.Log("player moving me");
@@ -31,7 +34,6 @@ public class BoxObject : RaycastObject
     [ContextMenu("MoveToDirection")]
     private void MoveToDirection()
     {
-        AudioController.PlaySfx(AudioController.Sfx.moveBox);
         switch (directionToBeMovedTo)
         {
             case Enumerables.directions.right:
@@ -56,8 +58,15 @@ public class BoxObject : RaycastObject
     #region TriggerRaycasts
     private void TriggerRaycasts()
     {
+        Debug.Log("hi1");
         directionToBeMovedTo = Enumerables.directions.noDir;
-        DrawRayCastDown();
+        //if (!assignedThisFrame)
+        //{
+        //    directionToBeMovedTo = Enumerables.directions.noDir;
+        //    assignedThisFrame = true;
+        //    StartCoroutine(LateFrame());
+        //}
+        //DrawRayCastDown();
         DrawRayCastLeft();
         DrawRayCastRight();
         DrawRayCastUp();
@@ -71,8 +80,9 @@ public class BoxObject : RaycastObject
         {
             if (raycastWDirection.transformHitted == null) { continue; }
 
-            if(raycastWDirection.transformHitted.name == "Player")
+            if (raycastWDirection.transformHitted.CompareTag("Player"))
             {
+                Debug.Log("player");
                 VerifyOposingDirection(raycastWDirection.myDirection);
                 return;
             }
@@ -90,8 +100,10 @@ public class BoxObject : RaycastObject
         {
             case Enumerables.directions.right:
                 #region right
+                Debug.Log("1r");
                 directionToBeMovedTo = Enumerables.directions.left;
-                if (hitInfoLeft.transform == null) { movableBox = true; break; }
+                Debug.Log(directionToBeMovedTo);
+                if (hitInfoLeft.transform == null) { Debug.Log("2r"); playerCanMoveMe = true; break; }
                 if (hitInfoLeft.collider.tag == "Obstacle" || hitInfoLeft.collider.tag == "Box"
                      || hitInfoLeft.transform.CompareTag("Border") || hitInfoLeft.transform.CompareTag("Root"))
                     playerCanMoveMe = false;
@@ -99,8 +111,9 @@ public class BoxObject : RaycastObject
                 break;
             case Enumerables.directions.left:
                 #region left
+                Debug.Log("1l");
                 directionToBeMovedTo = Enumerables.directions.right;
-                if (hitInfoRight.transform == null) { movableBox = true; break; }
+                if (hitInfoRight.transform == null) { playerCanMoveMe = true; break; }
                 if (hitInfoRight.collider.tag == "Obstacle" || hitInfoRight.collider.tag == "Box" 
                     || hitInfoRight.transform.CompareTag("Border") || hitInfoRight.transform.CompareTag("Root"))
                     playerCanMoveMe = false;
@@ -108,8 +121,9 @@ public class BoxObject : RaycastObject
                 break;
             case Enumerables.directions.up:
                 #region up
+                Debug.Log("1u");
                 directionToBeMovedTo = Enumerables.directions.down;
-                if (hitInfoDown.transform == null) { movableBox = true; break; }
+                if (hitInfoDown.transform == null) { playerCanMoveMe = true; break; }
                 if (hitInfoDown.collider.tag == "Obstacle" || hitInfoDown.collider.tag == "Box"
                     || hitInfoDown.transform.CompareTag("Border") || hitInfoDown.transform.CompareTag("Root"))
                     playerCanMoveMe = false;
@@ -117,8 +131,9 @@ public class BoxObject : RaycastObject
                 break;
             case Enumerables.directions.down:
                 #region down
+                Debug.Log("1d");
                 directionToBeMovedTo = Enumerables.directions.up;
-                if (hitInfoUp.transform == null) { movableBox = true; break; }
+                if (hitInfoUp.transform == null) { playerCanMoveMe = true; break; }
                 if (hitInfoUp.transform.CompareTag("Obstacle") || hitInfoUp.transform.CompareTag("Box")
                      || hitInfoUp.transform.CompareTag("Border")|| hitInfoUp.transform.CompareTag("Root"))
                     playerCanMoveMe = false;
