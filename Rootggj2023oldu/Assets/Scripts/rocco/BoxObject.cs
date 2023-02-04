@@ -71,7 +71,7 @@ public class BoxObject : RaycastObject
         //    assignedThisFrame = true;
         //    StartCoroutine(LateFrame());
         //}
-        //DrawRayCastDown();
+        DrawRayCastDown();
         DrawRayCastLeft();
         DrawRayCastRight();
         DrawRayCastUp();
@@ -84,7 +84,7 @@ public class BoxObject : RaycastObject
         foreach (RaycastHitWithDirection raycastWDirection in myRayCastHits)
         {
             if (raycastWDirection.transformHitted == null) { continue; }
-
+            Debug.Log($"at pos {transform.position}i hitted {raycastWDirection.transformHitted}");
             if (raycastWDirection.transformHitted.CompareTag("Player"))
             {
                 Debug.Log("player");
@@ -98,7 +98,7 @@ public class BoxObject : RaycastObject
     #region VerifyOposingDirection
     private void VerifyOposingDirection(Enumerables.directions hittingPlayerDirection)
     {
-        Debug.Log("VerifyOposingDirection");
+        Debug.Log($"VerifyOposingDirection {hittingPlayerDirection}");
         bool playerCanMoveMe = true;
         #region switch hittingPlayerDirection
         switch (hittingPlayerDirection)
@@ -138,7 +138,7 @@ public class BoxObject : RaycastObject
                 #region down
                 Debug.Log("1d");
                 directionToBeMovedTo = Enumerables.directions.up;
-                if (hitInfoUp.transform == null) { playerCanMoveMe = true; break; }
+                if (hitInfoUp.transform == null) { Debug.Log($"player down im up"); playerCanMoveMe = true; break; }
                 if (hitInfoUp.transform.CompareTag("Obstacle") || hitInfoUp.transform.CompareTag("Box")
                      || hitInfoUp.transform.CompareTag("Border")|| hitInfoUp.transform.CompareTag("Root"))
                     playerCanMoveMe = false;
