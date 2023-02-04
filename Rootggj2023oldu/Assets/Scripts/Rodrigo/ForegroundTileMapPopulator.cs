@@ -31,7 +31,7 @@ public class ForegroundTileMapPopulator : MonoBehaviour
             Debug.Log("Error, reader not found");
             return;
         }
-        string[,] csvData = reader.ReadFromCSV(0);
+        string[,] csvData = reader.ReadFromCSV(1);
 
         int rows = csvData.GetLength(0);
         int columns = csvData.GetLength(1);
