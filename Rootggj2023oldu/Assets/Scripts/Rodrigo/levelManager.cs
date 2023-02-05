@@ -8,7 +8,7 @@ public class levelManager : MonoBehaviour
     //Manejador de niveles.
     //Este código simplemente va a cargar el nivel apropiado y con otra función va a cargar el siguiente nivel.
     public static levelManager instance = null;
-
+    public float transitionWaitTime;
     [SerializeField]
     private ForegroundTileMapPopulator populator;
 
@@ -31,21 +31,35 @@ public class levelManager : MonoBehaviour
 
     public void LoadLevel()
     {
-        GetComponent<ForegroundTileMapPopulator>().Populate(levelCount);
+        VisualAndSoundEventsHangler.instance.ScreenTransition();
+        StartCoroutine(ActionsAfterSeconds(() =>
+        {
+            GetComponent<ForegroundTileMapPopulator>().Populate(levelCount);
+        },
+        transitionWaitTime));
+        
     }
-
+    private IEnumerator ActionsAfterSeconds(System.Action FunctionAfterSeconds,float secondsToWait)
+    {
+        yield return new WaitForSeconds(secondsToWait);
+        FunctionAfterSeconds?.Invoke();
+    }
     // Aquí vamos a llamar al siguiente nivel.
     public void LevelUp()
     {
-
-        //Aquí va a ir la lógica de recargar el nivel.
-        levelCount += 1;
-        CleanMap();
-        StartCoroutine(WaitOneSecond());
-        if(levelCount<=9)
+        Debug.Log("levelup");
+        StartCoroutine(ActionsAfterSeconds(() =>
         {
-            LoadLevel();
-        }
+            //Aquí va a ir la lógica de recargar el nivel.
+            levelCount += 1;
+            CleanMap();
+            StartCoroutine(WaitOneSecond());
+            if (levelCount <= 9)
+            {
+                LoadLevel();
+            }
+        },
+           transitionWaitTime));
     }
 
     public void ResetLevel()

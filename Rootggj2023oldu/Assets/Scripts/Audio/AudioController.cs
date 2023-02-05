@@ -29,13 +29,13 @@ public static class AudioController
     public enum Sfx
     {
         move, moveBox,
-        stump
+        stump, selectMenu,startGame,transition,resetLevel,hover
     }
 #endregion
     #region Songs
     public enum Songs
     {
-        menuSong, GameplaySong
+        menuSong, GameplaySong,backGround
     }
     #endregion
     #endregion
@@ -58,6 +58,7 @@ public static class AudioController
                 myAudioSourcesContinuos[i].clip = null;
                 myAudioSourcesContinuos[i].clip = GetContinuosAudioClip(sound);
                 myAudioSourcesContinuos[i].Play();
+                break;
             }
         }
         if (!foundAvailableAudioSource)
@@ -112,7 +113,8 @@ public static class AudioController
                {
                    GraduallyLoweringVolume(myAudioSourcesSongs[i],1);
                     foundPreviosSongToMute = true;
-               } 
+                    break;
+                } 
             }
         }
         if(foundPreviosSongToMute)
@@ -123,6 +125,7 @@ public static class AudioController
                 {
                     foundAvailableAudioSource = true;
                     myAudioSourcesSongs[i].PlayOneShot(GetSongAudioClip(sound));
+                    break;
                 }
             }
         }
@@ -153,10 +156,12 @@ public static class AudioController
             {
                 foundAvailableAudioSource = true;
                 myAudioSourcesSfx[i].PlayOneShot(GetSFXAudioClip(sound));
+                break;
             }
         }
         if (!foundAvailableAudioSource)
         {
+            Debug.Log($"hellooooo no found as");
             GameObject soundGameObject = new GameObject("Sfx");
             AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
             soundGameObject.transform.parent = sfxParent.transform;
@@ -181,6 +186,7 @@ public static class AudioController
             {
                 foundAvailableAudioSource = true;
                 myAudioSourcesVoices[i].PlayOneShot(GetVoiceAudioClip(sound));
+                break;
             }
         }
         if (!foundAvailableAudioSource)
