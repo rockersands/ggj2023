@@ -14,11 +14,16 @@ public class GameEvents : MonoBehaviour
     }
     #endregion
     public event Action playerTryingToMove_Event;
+    public event Action updateMoves_Event;
     public event Action<Enumerables.directions> playerMoved_Event;
     [ContextMenu("playerMoved")]
     public void PlayerMoved(Enumerables.directions playerMovingDirection)
     {
         playerMoved_Event?.Invoke(playerMovingDirection);
+    }
+    public void updateMoves()
+    {
+        updateMoves_Event?.Invoke();
     }
     public void PlayerTryingToMove()
     {

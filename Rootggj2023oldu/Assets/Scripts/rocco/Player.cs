@@ -23,6 +23,7 @@ public class Player : RaycastObject
     {
         movesCounter = moveCount;
         MovesCounterHandler.moves = moveCount;
+        GameEvents.instance.updateMoves();
     }
     public void AssignFirstDirection(int direction)
     {
