@@ -12,7 +12,7 @@ public class MovesCounterHandler : MonoBehaviour
     }
     private void UpdateMovesCounterText(Enumerables.directions meh)
     {
-        MovesCounterText.text = (moves -= 1).ToString();
+        MovesCounterText.text = $"Movimientos restantes {moves -= 1}";
     }
     private void OnDisable()
     {

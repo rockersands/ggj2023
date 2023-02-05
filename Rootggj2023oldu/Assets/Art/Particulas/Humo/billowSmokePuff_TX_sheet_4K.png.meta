@@ -1,0 +1,2159 @@
+fileFormatVersion: 2
+guid: d9bb7861c6a224146a2aa65014e227f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2931755267040999537
+    second: billowSmokePuff_TX_sheet_4K_0
+  - first:
+      213: 5612308504588157107
+    second: billowSmokePuff_TX_sheet_4K_1
+  - first:
+      213: -2707461230385996962
+    second: billowSmokePuff_TX_sheet_4K_2
+  - first:
+      213: -8752748638455131029
+    second: billowSmokePuff_TX_sheet_4K_3
+  - first:
+      213: -4837395825248100752
+    second: billowSmokePuff_TX_sheet_4K_4
+  - first:
+      213: -7745101035263460332
+    second: billowSmokePuff_TX_sheet_4K_5
+  - first:
+      213: -9155210115831868025
+    second: billowSmokePuff_TX_sheet_4K_6
+  - first:
+      213: 2368402210602892858
+    second: billowSmokePuff_TX_sheet_4K_7
+  - first:
+      213: -6586839650552863459
+    second: billowSmokePuff_TX_sheet_4K_8
+  - first:
+      213: 657936475125072597
+    second: billowSmokePuff_TX_sheet_4K_9
+  - first:
+      213: 8460054272900270018
+    second: billowSmokePuff_TX_sheet_4K_10
+  - first:
+      213: -5195723955715740165
+    second: billowSmokePuff_TX_sheet_4K_11
+  - first:
+      213: -7619100443406225610
+    second: billowSmokePuff_TX_sheet_4K_12
+  - first:
+      213: -470395433058840947
+    second: billowSmokePuff_TX_sheet_4K_13
+  - first:
+      213: 5887803196438198227
+    second: billowSmokePuff_TX_sheet_4K_14
+  - first:
+      213: 4279342684260263349
+    second: billowSmokePuff_TX_sheet_4K_15
+  - first:
+      213: -2095077814193412944
+    second: billowSmokePuff_TX_sheet_4K_16
+  - first:
+      213: -3122776999420325503
+    second: billowSmokePuff_TX_sheet_4K_17
+  - first:
+      213: -3921529670072741811
+    second: billowSmokePuff_TX_sheet_4K_18
+  - first:
+      213: -6548119850276516504
+    second: billowSmokePuff_TX_sheet_4K_19
+  - first:
+      213: -422948075419975280
+    second: billowSmokePuff_TX_sheet_4K_20
+  - first:
+      213: 4411676593379214008
+    second: billowSmokePuff_TX_sheet_4K_21
+  - first:
+      213: 8150252617947992413
+    second: billowSmokePuff_TX_sheet_4K_22
+  - first:
+      213: -5967124837013707146
+    second: billowSmokePuff_TX_sheet_4K_23
+  - first:
+      213: -5566422168266454312
+    second: billowSmokePuff_TX_sheet_4K_24
+  - first:
+      213: 9073059760271573092
+    second: billowSmokePuff_TX_sheet_4K_25
+  - first:
+      213: -7483002149265731799
+    second: billowSmokePuff_TX_sheet_4K_26
+  - first:
+      213: -756018001597419439
+    second: billowSmokePuff_TX_sheet_4K_27
+  - first:
+      213: -5669505992703685315
+    second: billowSmokePuff_TX_sheet_4K_28
+  - first:
+      213: -8970810845977609597
+    second: billowSmokePuff_TX_sheet_4K_29
+  - first:
+      213: -5299347841691878583
+    second: billowSmokePuff_TX_sheet_4K_30
+  - first:
+      213: -2332784797236822671
+    second: billowSmokePuff_TX_sheet_4K_31
+  - first:
+      213: 3378405947364853555
+    second: billowSmokePuff_TX_sheet_4K_32
+  - first:
+      213: 4763143752375774419
+    second: billowSmokePuff_TX_sheet_4K_33
+  - first:
+      213: -1655559592274459772
+    second: billowSmokePuff_TX_sheet_4K_34
+  - first:
+      213: 2615818066666766275
+    second: billowSmokePuff_TX_sheet_4K_35
+  - first:
+      213: -7666130973370523498
+    second: billowSmokePuff_TX_sheet_4K_36
+  - first:
+      213: 4580965369019039528
+    second: billowSmokePuff_TX_sheet_4K_37
+  - first:
+      213: 8247753904975286893
+    second: billowSmokePuff_TX_sheet_4K_38
+  - first:
+      213: 5203218108245970346
+    second: billowSmokePuff_TX_sheet_4K_39
+  - first:
+      213: -870488102653164653
+    second: billowSmokePuff_TX_sheet_4K_40
+  - first:
+      213: -3167551880438805338
+    second: billowSmokePuff_TX_sheet_4K_41
+  - first:
+      213: 5124551192464866743
+    second: billowSmokePuff_TX_sheet_4K_42
+  - first:
+      213: 3501893582250750911
+    second: billowSmokePuff_TX_sheet_4K_43
+  - first:
+      213: -5763617604949232258
+    second: billowSmokePuff_TX_sheet_4K_44
+  - first:
+      213: -6322934044353860959
+    second: billowSmokePuff_TX_sheet_4K_45
+  - first:
+      213: -8223668480324864959
+    second: billowSmokePuff_TX_sheet_4K_46
+  - first:
+      213: 8056843099831567736
+    second: billowSmokePuff_TX_sheet_4K_47
+  - first:
+      213: -6149955511124772193
+    second: billowSmokePuff_TX_sheet_4K_48
+  - first:
+      213: 7127487284974864909
+    second: billowSmokePuff_TX_sheet_4K_49
+  - first:
+      213: -6490007870680051884
+    second: billowSmokePuff_TX_sheet_4K_50
+  - first:
+      213: 4236618055830280176
+    second: billowSmokePuff_TX_sheet_4K_51
+  - first:
+      213: 3739123367591416416
+    second: billowSmokePuff_TX_sheet_4K_52
+  - first:
+      213: -7384418438514320439
+    second: billowSmokePuff_TX_sheet_4K_53
+  - first:
+      213: 7680067703618523153
+    second: billowSmokePuff_TX_sheet_4K_54
+  - first:
+      213: 7926453326465496349
+    second: billowSmokePuff_TX_sheet_4K_55
+  - first:
+      213: -801404339885609392
+    second: billowSmokePuff_TX_sheet_4K_56
+  - first:
+      213: 6961509787691107105
+    second: billowSmokePuff_TX_sheet_4K_57
+  - first:
+      213: -793390040278048932
+    second: billowSmokePuff_TX_sheet_4K_58
+  - first:
+      213: -7243475604450002064
+    second: billowSmokePuff_TX_sheet_4K_59
+  - first:
+      213: 2865735135231685792
+    second: billowSmokePuff_TX_sheet_4K_60
+  - first:
+      213: 3894875433625923192
+    second: billowSmokePuff_TX_sheet_4K_61
+  - first:
+      213: -4201192729581955306
+    second: billowSmokePuff_TX_sheet_4K_62
+  - first:
+      213: -4150831891559162128
+    second: billowSmokePuff_TX_sheet_4K_63
+  - first:
+      213: 7608319245428913497
+    second: billowSmokePuff_TX_sheet_4K_64
+  - first:
+      213: 1255707697211488087
+    second: billowSmokePuff_TX_sheet_4K_65
+  - first:
+      213: 8430585904827462613
+    second: billowSmokePuff_TX_sheet_4K_66
+  - first:
+      213: 8417678457182478940
+    second: billowSmokePuff_TX_sheet_4K_67
+  - first:
+      213: 7968427806750947249
+    second: billowSmokePuff_TX_sheet_4K_68
+  - first:
+      213: -4449830974886892103
+    second: billowSmokePuff_TX_sheet_4K_69
+  - first:
+      213: -3285857168203822788
+    second: billowSmokePuff_TX_sheet_4K_70
+  - first:
+      213: -1443174801728166442
+    second: billowSmokePuff_TX_sheet_4K_71
+  - first:
+      213: 304340628763562579
+    second: billowSmokePuff_TX_sheet_4K_72
+  - first:
+      213: 4025030496893363934
+    second: billowSmokePuff_TX_sheet_4K_73
+  - first:
+      213: 6745918027577939814
+    second: billowSmokePuff_TX_sheet_4K_74
+  - first:
+      213: 7255930241236472914
+    second: billowSmokePuff_TX_sheet_4K_75
+  - first:
+      213: -6139217113921289424
+    second: billowSmokePuff_TX_sheet_4K_76
+  - first:
+      213: -2099400430425130520
+    second: billowSmokePuff_TX_sheet_4K_77
+  - first:
+      213: 2661017953170153952
+    second: billowSmokePuff_TX_sheet_4K_78
+  - first:
+      213: 9017211965222279195
+    second: billowSmokePuff_TX_sheet_4K_79
+  - first:
+      213: 8345778039675180013
+    second: billowSmokePuff_TX_sheet_4K_80
+  - first:
+      213: 3356733563009677524
+    second: billowSmokePuff_TX_sheet_4K_81
+  - first:
+      213: 7005382672735854890
+    second: billowSmokePuff_TX_sheet_4K_82
+  - first:
+      213: 2205985664434022203
+    second: billowSmokePuff_TX_sheet_4K_83
+  - first:
+      213: -2446152817982094545
+    second: billowSmokePuff_TX_sheet_4K_84
+  - first:
+      213: -2427777619037330209
+    second: billowSmokePuff_TX_sheet_4K_85
+  - first:
+      213: 8858678156699106383
+    second: billowSmokePuff_TX_sheet_4K_86
+  - first:
+      213: 6261730462642505295
+    second: billowSmokePuff_TX_sheet_4K_87
+  - first:
+      213: -1804518329005017019
+    second: billowSmokePuff_TX_sheet_4K_88
+  - first:
+      213: -7642809006746306979
+    second: billowSmokePuff_TX_sheet_4K_89
+  - first:
+      213: -1328700094155682101
+    second: billowSmokePuff_TX_sheet_4K_90
+  - first:
+      213: -6016344052304555426
+    second: billowSmokePuff_TX_sheet_4K_91
+  - first:
+      213: 1170115289590366851
+    second: billowSmokePuff_TX_sheet_4K_92
+  - first:
+      213: -7425415399978296361
+    second: billowSmokePuff_TX_sheet_4K_93
+  - first:
+      213: 1620029758683228432
+    second: billowSmokePuff_TX_sheet_4K_94
+  - first:
+      213: 4146881501089599934
+    second: billowSmokePuff_TX_sheet_4K_95
+  - first:
+      213: 2297217385576145270
+    second: billowSmokePuff_TX_sheet_4K_96
+  - first:
+      213: -7237427507336651317
+    second: billowSmokePuff_TX_sheet_4K_97
+  - first:
+      213: -9178660245984161296
+    second: billowSmokePuff_TX_sheet_4K_98
+  - first:
+      213: 6077691229208245560
+    second: billowSmokePuff_TX_sheet_4K_99
+  - first:
+      213: -1030317789650971013
+    second: billowSmokePuff_TX_sheet_4K_100
+  - first:
+      213: 1307919218190276783
+    second: billowSmokePuff_TX_sheet_4K_101
+  - first:
+      213: -1875823520848880108
+    second: billowSmokePuff_TX_sheet_4K_102
+  - first:
+      213: 755149686789893386
+    second: billowSmokePuff_TX_sheet_4K_103
+  - first:
+      213: -5966448120094598827
+    second: billowSmokePuff_TX_sheet_4K_104
+  - first:
+      213: 2430778515581145823
+    second: billowSmokePuff_TX_sheet_4K_105
+  - first:
+      213: -8838954992427752735
+    second: billowSmokePuff_TX_sheet_4K_106
+  - first:
+      213: 9201639758850464587
+    second: billowSmokePuff_TX_sheet_4K_107
+  - first:
+      213: 6219413890042711703
+    second: billowSmokePuff_TX_sheet_4K_108
+  - first:
+      213: 3791382676314420366
+    second: billowSmokePuff_TX_sheet_4K_109
+  - first:
+      213: -3560033093925615897
+    second: billowSmokePuff_TX_sheet_4K_110
+  - first:
+      213: 751514747944182557
+    second: billowSmokePuff_TX_sheet_4K_111
+  - first:
+      213: 1633907087105194892
+    second: billowSmokePuff_TX_sheet_4K_112
+  - first:
+      213: -1602107353778155438
+    second: billowSmokePuff_TX_sheet_4K_113
+  - first:
+      213: -2705857389539185630
+    second: billowSmokePuff_TX_sheet_4K_114
+  - first:
+      213: -3769424449077076463
+    second: billowSmokePuff_TX_sheet_4K_115
+  - first:
+      213: -5083194378693387925
+    second: billowSmokePuff_TX_sheet_4K_116
+  - first:
+      213: -4760845053408590040
+    second: billowSmokePuff_TX_sheet_4K_117
+  - first:
+      213: 8996200544435401473
+    second: billowSmokePuff_TX_sheet_4K_118
+  - first:
+      213: 6721971086573889061
+    second: billowSmokePuff_TX_sheet_4K_119
+  - first:
+      213: 7004343564828301893
+    second: billowSmokePuff_TX_sheet_4K_120
+  - first:
+      213: 7611487680903616710
+    second: billowSmokePuff_TX_sheet_4K_121
+  - first:
+      213: -8370605508135767543
+    second: billowSmokePuff_TX_sheet_4K_122
+  - first:
+      213: -1608841008637063226
+    second: billowSmokePuff_TX_sheet_4K_123
+  - first:
+      213: 2297029530531787338
+    second: billowSmokePuff_TX_sheet_4K_124
+  - first:
+      213: 85327267889904598
+    second: billowSmokePuff_TX_sheet_4K_125
+  - first:
+      213: 6007620726719450633
+    second: billowSmokePuff_TX_sheet_4K_126
+  - first:
+      213: 4861573582635247751
+    second: billowSmokePuff_TX_sheet_4K_127
+  - first:
+      213: -2902389422606523843
+    second: billowSmokePuff_TX_sheet_4K_128
+  - first:
+      213: 3325833317166338154
+    second: billowSmokePuff_TX_sheet_4K_129
+  - first:
+      213: -1088425317494831330
+    second: billowSmokePuff_TX_sheet_4K_130
+  - first:
+      213: 4484351096057764922
+    second: billowSmokePuff_TX_sheet_4K_131
+  - first:
+      213: 3949653493596449142
+    second: billowSmokePuff_TX_sheet_4K_132
+  - first:
+      213: 3150066377973032665
+    second: billowSmokePuff_TX_sheet_4K_133
+  - first:
+      213: 4527442773852372797
+    second: billowSmokePuff_TX_sheet_4K_134
+  - first:
+      213: 7976134161283813596
+    second: billowSmokePuff_TX_sheet_4K_135
+  - first:
+      213: -201980345491023513
+    second: billowSmokePuff_TX_sheet_4K_136
+  - first:
+      213: -4184394298598751277
+    second: billowSmokePuff_TX_sheet_4K_137
+  - first:
+      213: 5108259985493290054
+    second: billowSmokePuff_TX_sheet_4K_138
+  - first:
+      213: -8016554009316712333
+    second: billowSmokePuff_TX_sheet_4K_139
+  - first:
+      213: -4979208364816227202
+    second: billowSmokePuff_TX_sheet_4K_140
+  - first:
+      213: -8088133257139431280
+    second: billowSmokePuff_TX_sheet_4K_141
+  - first:
+      213: -20971805811423957
+    second: billowSmokePuff_TX_sheet_4K_142
+  - first:
+      213: 6921459284610609387
+    second: billowSmokePuff_TX_sheet_4K_143
+  - first:
+      213: 283477866478177688
+    second: billowSmokePuff_TX_sheet_4K_144
+  - first:
+      213: 2244176078169806147
+    second: billowSmokePuff_TX_sheet_4K_145
+  - first:
+      213: -2132048002503793115
+    second: billowSmokePuff_TX_sheet_4K_146
+  - first:
+      213: 7734631367869396190
+    second: billowSmokePuff_TX_sheet_4K_147
+  - first:
+      213: -19317156906232729
+    second: billowSmokePuff_TX_sheet_4K_148
+  - first:
+      213: 1225693315568728615
+    second: billowSmokePuff_TX_sheet_4K_149
+  - first:
+      213: 4276883842165375798
+    second: billowSmokePuff_TX_sheet_4K_150
+  - first:
+      213: -1547870774785176965
+    second: billowSmokePuff_TX_sheet_4K_151
+  - first:
+      213: 5591720691658846542
+    second: billowSmokePuff_TX_sheet_4K_152
+  - first:
+      213: 5396174890908810461
+    second: billowSmokePuff_TX_sheet_4K_153
+  - first:
+      213: -6237798315754493680
+    second: billowSmokePuff_TX_sheet_4K_154
+  - first:
+      213: -7424591224794168276
+    second: billowSmokePuff_TX_sheet_4K_155
+  - first:
+      213: 1021109522883196108
+    second: billowSmokePuff_TX_sheet_4K_156
+  - first:
+      213: 3524581541814987099
+    second: billowSmokePuff_TX_sheet_4K_157
+  - first:
+      213: 930894058671108530
+    second: billowSmokePuff_TX_sheet_4K_158
+  - first:
+      213: 5570125103281708759
+    second: billowSmokePuff_TX_sheet_4K_159
+  - first:
+      213: 1269934142681725281
+    second: billowSmokePuff_TX_sheet_4K_160
+  - first:
+      213: 622270814542426946
+    second: billowSmokePuff_TX_sheet_4K_161
+  - first:
+      213: -5129448053176072550
+    second: billowSmokePuff_TX_sheet_4K_162
+  - first:
+      213: -3741500297723586425
+    second: billowSmokePuff_TX_sheet_4K_163
+  - first:
+      213: -6913363886175011340
+    second: billowSmokePuff_TX_sheet_4K_164
+  - first:
+      213: -7491369740962030280
+    second: billowSmokePuff_TX_sheet_4K_165
+  - first:
+      213: -2862088367145299609
+    second: billowSmokePuff_TX_sheet_4K_166
+  - first:
+      213: 7636564272042493377
+    second: billowSmokePuff_TX_sheet_4K_167
+  - first:
+      213: -3755974613090990265
+    second: billowSmokePuff_TX_sheet_4K_168
+  - first:
+      213: -1568521714946536018
+    second: billowSmokePuff_TX_sheet_4K_169
+  - first:
+      213: -8948476270343753730
+    second: billowSmokePuff_TX_sheet_4K_170
+  - first:
+      213: 823632525159487707
+    second: billowSmokePuff_TX_sheet_4K_171
+  - first:
+      213: 4267536649632851720
+    second: billowSmokePuff_TX_sheet_4K_172
+  - first:
+      213: 267618356495810157
+    second: billowSmokePuff_TX_sheet_4K_173
+  - first:
+      213: -2742064282259386513
+    second: billowSmokePuff_TX_sheet_4K_174
+  - first:
+      213: 5196619230692570859
+    second: billowSmokePuff_TX_sheet_4K_175
+  - first:
+      213: 6205369056971614173
+    second: billowSmokePuff_TX_sheet_4K_176
+  - first:
+      213: -5601432875337905966
+    second: billowSmokePuff_TX_sheet_4K_177
+  - first:
+      213: -1335051122601865158
+    second: billowSmokePuff_TX_sheet_4K_178
+  - first:
+      213: 6139259159583054863
+    second: billowSmokePuff_TX_sheet_4K_179
+  - first:
+      213: 7584523985333659622
+    second: billowSmokePuff_TX_sheet_4K_180
+  - first:
+      213: 7327330724623770462
+    second: billowSmokePuff_TX_sheet_4K_181
+  - first:
+      213: -5438058689701593062
+    second: billowSmokePuff_TX_sheet_4K_182
+  - first:
+      213: -7349661155407648097
+    second: billowSmokePuff_TX_sheet_4K_183
+  - first:
+      213: -5501142897685648333
+    second: billowSmokePuff_TX_sheet_4K_184
+  - first:
+      213: 1468400143027919335
+    second: billowSmokePuff_TX_sheet_4K_185
+  - first:
+      213: -702095949626478058
+    second: billowSmokePuff_TX_sheet_4K_186
+  - first:
+      213: -320282411768398776
+    second: billowSmokePuff_TX_sheet_4K_187
+  - first:
+      213: 8974242062949848200
+    second: billowSmokePuff_TX_sheet_4K_188
+  - first:
+      213: 3281638946268619984
+    second: billowSmokePuff_TX_sheet_4K_189
+  - first:
+      213: -4691631408549771349
+    second: billowSmokePuff_TX_sheet_4K_190
+  - first:
+      213: 7583398197851438306
+    second: billowSmokePuff_TX_sheet_4K_191
+  - first:
+      213: -3161602906020262060
+    second: billowSmokePuff_TX_sheet_4K_192
+  - first:
+      213: 6725359440971222294
+    second: billowSmokePuff_TX_sheet_4K_193
+  - first:
+      213: -8986945222696321072
+    second: billowSmokePuff_TX_sheet_4K_194
+  - first:
+      213: 8088626803778962804
+    second: billowSmokePuff_TX_sheet_4K_195
+  - first:
+      213: -190311562905394948
+    second: billowSmokePuff_TX_sheet_4K_196
+  - first:
+      213: 3239853711322875541
+    second: billowSmokePuff_TX_sheet_4K_197
+  - first:
+      213: -6128795977227020809
+    second: billowSmokePuff_TX_sheet_4K_198
+  - first:
+      213: 4118946091974958875
+    second: billowSmokePuff_TX_sheet_4K_199
+  - first:
+      213: 4924912917396909663
+    second: billowSmokePuff_TX_sheet_4K_200
+  - first:
+      213: 6390667543244632316
+    second: billowSmokePuff_TX_sheet_4K_201
+  - first:
+      213: -530697535071967770
+    second: billowSmokePuff_TX_sheet_4K_202
+  - first:
+      213: -7974815297338437351
+    second: billowSmokePuff_TX_sheet_4K_203
+  - first:
+      213: -840117844822118597
+    second: billowSmokePuff_TX_sheet_4K_204
+  - first:
+      213: 2294666504218494120
+    second: billowSmokePuff_TX_sheet_4K_205
+  - first:
+      213: -1283368569768255653
+    second: billowSmokePuff_TX_sheet_4K_206
+  - first:
+      213: -8408918831635669645
+    second: billowSmokePuff_TX_sheet_4K_207
+  - first:
+      213: 3656713753715562024
+    second: billowSmokePuff_TX_sheet_4K_208
+  - first:
+      213: -1068078641618028192
+    second: billowSmokePuff_TX_sheet_4K_209
+  - first:
+      213: -5300566736721681052
+    second: billowSmokePuff_TX_sheet_4K_210
+  - first:
+      213: -8341194405474539878
+    second: billowSmokePuff_TX_sheet_4K_211
+  - first:
+      213: -898712215288840157
+    second: billowSmokePuff_TX_sheet_4K_212
+  - first:
+      213: 6010312102972261249
+    second: billowSmokePuff_TX_sheet_4K_213
+  - first:
+      213: -3162948702589650320
+    second: billowSmokePuff_TX_sheet_4K_214
+  - first:
+      213: 7484903242749135393
+    second: billowSmokePuff_TX_sheet_4K_215
+  - first:
+      213: -3534865144111195188
+    second: billowSmokePuff_TX_sheet_4K_216
+  - first:
+      213: -3186918879923545532
+    second: billowSmokePuff_TX_sheet_4K_217
+  - first:
+      213: 7846793791536231971
+    second: billowSmokePuff_TX_sheet_4K_218
+  - first:
+      213: -1755985553856775719
+    second: billowSmokePuff_TX_sheet_4K_219
+  - first:
+      213: -6918803320864353261
+    second: billowSmokePuff_TX_sheet_4K_220
+  - first:
+      213: -269149006455574244
+    second: billowSmokePuff_TX_sheet_4K_221
+  - first:
+      213: -4663224150844475165
+    second: billowSmokePuff_TX_sheet_4K_222
+  - first:
+      213: -1725645459301351271
+    second: billowSmokePuff_TX_sheet_4K_223
+  - first:
+      213: -6330040407619683272
+    second: billowSmokePuff_TX_sheet_4K_224
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178fb5cd1efafa820800000000000000
+      internalID: 2931755267040999537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b081e189dce2ed40800000000000000
+      internalID: 5612308504588157107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b53bf0b5a2d6ad0800000000000000
+      internalID: -2707461230385996962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b641994cc7df78680800000000000000
+      internalID: -8752748638455131029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e1126602e1edcb0800000000000000
+      internalID: -4837395825248100752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_5
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c7c9bc4afd38490800000000000000
+      internalID: -7745101035263460332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78557c1f7e822f080800000000000000
+      internalID: -9155210115831868025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_7
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 875
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e3c3023414ed020800000000000000
+      internalID: 2368402210602892858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15a6548c38d694a0800000000000000
+      internalID: -6586839650552863459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_9
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d24a9cfcb5712900800000000000000
+      internalID: 657936475125072597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_10
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c70fb4b986286570800000000000000
+      internalID: 8460054272900270018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd6394279415e7b0800000000000000
+      internalID: -5195723955715740165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_12
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f20c2b384834690800000000000000
+      internalID: -7619100443406225610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_13
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ecf8c88d1d879f0800000000000000
+      internalID: -470395433058840947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7bb1fefcda5b150800000000000000
+      internalID: 5887803196438198227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_15
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 750
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5ef779f77436b30800000000000000
+      internalID: 4279342684260263349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4233404d9cce2e0800000000000000
+      internalID: -2095077814193412944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_17
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1819acc3ddaa9a4d0800000000000000
+      internalID: -3122776999420325503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_18
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40d82fca8de399c0800000000000000
+      internalID: -3921529670072741811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_19
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d859980b76025a0800000000000000
+      internalID: -6548119850276516504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_20
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091482e57f2612af0800000000000000
+      internalID: -422948075419975280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_21
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b20644dc7c693d30800000000000000
+      internalID: 4411676593379214008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51dc7af2938b1170800000000000000
+      internalID: 8150252617947992413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_23
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 625
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676236f6393803da0800000000000000
+      internalID: -5967124837013707146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da4e96b78810c2b0800000000000000
+      internalID: -5566422168266454312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_25
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460c0e4e7cbf9ed70800000000000000
+      internalID: 9073059760271573092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_26
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f088f1139072890800000000000000
+      internalID: -7483002149265731799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_27
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1503cf212a51285f0800000000000000
+      internalID: -756018001597419439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_28
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dc2f4865ed151b0800000000000000
+      internalID: -5669505992703685315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_29
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a7842a017418380800000000000000
+      internalID: -8970810845977609597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_30
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bf8b2173fe476b0800000000000000
+      internalID: -5299347841691878583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_31
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 500
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d7447269840afd0800000000000000
+      internalID: -2332784797236822671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337cfbf3f4282ee20800000000000000
+      internalID: 3378405947364853555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_33
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcaa7ea1061a1240800000000000000
+      internalID: 4763143752375774419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_34
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4838df582554609e0800000000000000
+      internalID: -1655559592274459772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_35
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfb8b42ca04d4420800000000000000
+      internalID: 2615818066666766275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_36
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69061a22f7e6c9590800000000000000
+      internalID: -7666130973370523498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_37
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ffebc6bbbd29f30800000000000000
+      internalID: 4580965369019039528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_38
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6294e46a78e57270800000000000000
+      internalID: 8247753904975286893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_39
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 375
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad81e63d4b853840800000000000000
+      internalID: 5203218108245970346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3938724cea76be3f0800000000000000
+      internalID: -870488102653164653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_41
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac03ded8589a04d0800000000000000
+      internalID: -3167551880438805338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_42
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd3c2498201e1740800000000000000
+      internalID: 5124551192464866743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_43
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3b643c8a9399030800000000000000
+      internalID: 3501893582250750911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_44
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7530d343548300b0800000000000000
+      internalID: -5763617604949232258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_45
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa601cacfc6048a0800000000000000
+      internalID: -6322934044353860959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_46
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144f8a78619afdd80800000000000000
+      internalID: -8223668480324864959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_47
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 250
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8758480cc18afcf60800000000000000
+      internalID: 8056843099831567736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ab3f6eb08f6aaa0800000000000000
+      internalID: -6149955511124772193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_49
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a4a023cebe9e260800000000000000
+      internalID: 7127487284974864909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_50
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f40a62a3cdee5a0800000000000000
+      internalID: -6490007870680051884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_51
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f715cadcad7bca30800000000000000
+      internalID: 4236618055830280176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_52
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06216a064e804e330800000000000000
+      internalID: 3739123367591416416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_53
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb5283fd86458990800000000000000
+      internalID: -7384418438514320439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_54
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110d12db2e4159a60800000000000000
+      internalID: 7680067703618523153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_55
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 125
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1570b4ed4b600e60800000000000000
+      internalID: 7926453326465496349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e69a7bff6d0e4f0800000000000000
+      internalID: -801404339885609392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_57
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123cbbba4404c9060800000000000000
+      internalID: 6961509787691107105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_58
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fd4e046ff4df4f0800000000000000
+      internalID: -793390040278048932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_59
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bbc89b0510a7b90800000000000000
+      internalID: -7243475604450002064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_60
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a437d31ce225c720800000000000000
+      internalID: 2865735135231685792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_61
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e2ba922906d0630800000000000000
+      internalID: 3894875433625923192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_62
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6175058a87d52b5c0800000000000000
+      internalID: -4201192729581955306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: billowSmokePuff_TX_sheet_4K_63
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fed04df2684566c0800000000000000
+      internalID: -4150831891559162128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bdc817d5f477efb4fb660732a25a64e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
