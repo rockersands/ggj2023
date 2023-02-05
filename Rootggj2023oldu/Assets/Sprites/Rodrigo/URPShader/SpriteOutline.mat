@@ -23,7 +23,7 @@ Material:
   m_Name: SpriteOutline
   m_Shader: {fileID: -6465566751694194690, guid: 7f7c5edbd2290c244bbd90ba7163fbc9,
     type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_ShaderKeywords: CORNERS_ON ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -34,7 +34,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Main_Tex:
-        m_Texture: {fileID: 2800000, guid: 391319884231fb648933169ba289c718, type: 3}
+        m_Texture: {fileID: 2800000, guid: a8a206d4a5857e6498ee80737e248e01, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Sprite:
+        m_Texture: {fileID: 2800000, guid: a8a206d4a5857e6498ee80737e248e01, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -66,6 +70,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - CORNERS: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -78,7 +83,7 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
-    - _OutlineThickness: 2.19
+    - _OutlineThickness: 2.54
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
@@ -92,5 +97,5 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0.912658, g: 1, b: 0, a: 0}
+    - _OutlineColor: {r: 0.2028302, g: 0.6105828, b: 1, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
