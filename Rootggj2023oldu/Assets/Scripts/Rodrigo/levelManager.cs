@@ -53,7 +53,6 @@ public class levelManager : MonoBehaviour
             //Aquí va a ir la lógica de recargar el nivel.
             levelCount += 1;
             CleanMap();
-            StartCoroutine(WaitOneSecond());
             if (levelCount <= 9)
             {
                 LoadLevel();
