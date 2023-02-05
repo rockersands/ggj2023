@@ -57,6 +57,10 @@ public class levelManager : MonoBehaviour
             {
                 LoadLevel();
             }
+            else
+            {
+                VisualAndSoundEventsHangler.instance.FinalCutscente();
+            }
         },
            transitionWaitTime));
     }

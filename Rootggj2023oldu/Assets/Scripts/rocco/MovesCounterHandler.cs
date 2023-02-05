@@ -17,7 +17,7 @@ public class MovesCounterHandler : MonoBehaviour
     }
     private void UpdateMovesCounterTextt()
     {
-        MovesCounterText.text = $"Movimientos restantes {moves -= 1 }";
+        MovesCounterText.text = $"Movimientos restantes {moves}";
     }
     private void OnDisable()
     {

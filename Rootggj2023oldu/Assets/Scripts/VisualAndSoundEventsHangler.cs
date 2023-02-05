@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
-
+using UnityEngine.SceneManagement;
 public class VisualAndSoundEventsHangler : MonoBehaviour
 {
     public static VisualAndSoundEventsHangler instance;
     public PlayableDirector timelineFirstCutscene;
+    public PlayableDirector timelineLastCutscene;
+    public List<GameObject> objectsToDeactivateFinalCinematic;
+    public GameObject turnMeOnFCinema;
     private void Awake()
     {
         if (instance == null)
@@ -24,6 +27,19 @@ public class VisualAndSoundEventsHangler : MonoBehaviour
     public void PlayTimelineCinematicStart()
     {
         timelineFirstCutscene.Play();
+    }
+    public void FinishedGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void FinalCutscente()
+    {
+        foreach (var item in objectsToDeactivateFinalCinematic)
+        {
+            item.SetActive(false);
+        }
+        turnMeOnFCinema.SetActive(true);
+        timelineLastCutscene.Play();
     }
     public void HoverSelection()
     {
