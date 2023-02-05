@@ -62,6 +62,7 @@ public class levelManager : MonoBehaviour
            transitionWaitTime));
     }
 
+    [ContextMenu("ResetLevel()")]
     public void ResetLevel()
     {
         CleanMap();

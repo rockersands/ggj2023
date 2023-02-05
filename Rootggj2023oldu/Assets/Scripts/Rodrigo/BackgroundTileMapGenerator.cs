@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -8,6 +7,8 @@ public class BackgroundTileMapGenerator : MonoBehaviour
 {
     public Tilemap tilemap;
     public TileBase[] tiles;
+
+    Sprite[] objs;
 
     private int[,] mapData =
     {
@@ -25,6 +26,7 @@ public class BackgroundTileMapGenerator : MonoBehaviour
 
     private void Start()
     {
+        objs = Resources.LoadAll<Sprite>("Sprites");
         GenerateMap();
     }
 
@@ -41,7 +43,10 @@ public class BackgroundTileMapGenerator : MonoBehaviour
                 }
                 else
                 {
-                    tilemap.SetTile(p, tiles[0]);
+                    Sprite randomSprite = objs[Random.Range(0, 26)];
+                    Tile tempTile = ScriptableObject.CreateInstance<Tile>();
+                    tempTile.sprite = randomSprite;
+                    tilemap.SetTile(p, tempTile);
                 }
 
             }
