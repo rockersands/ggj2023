@@ -87,4 +87,9 @@ public class levelManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Debug.Log("One second has passed");
     }
+
+    public void ExitApp()
+    {
+        Application.Quit();
+    }
 }
