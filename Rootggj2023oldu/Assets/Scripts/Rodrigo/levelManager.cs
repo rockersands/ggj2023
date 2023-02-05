@@ -48,6 +48,16 @@ public class levelManager : MonoBehaviour
         }
     }
 
+    public void ResetLevel()
+    {
+        CleanMap();
+        StartCoroutine(WaitOneSecond());
+        if (levelCount <= 9)
+        {
+            LoadLevel();
+        }
+    }
+
     void CleanMap()
     {
         Player.ResetTail();
