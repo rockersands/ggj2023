@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class VisualAndSoundEventsHangler : MonoBehaviour
 {
     public static VisualAndSoundEventsHangler instance;
+    public PlayableDirector timelineFirstCutscene;
     private void Awake()
     {
         if (instance == null)
@@ -18,6 +20,10 @@ public class VisualAndSoundEventsHangler : MonoBehaviour
     {
         screenTransitionAnim.SetTrigger("Transition");
         AudioController.PlaySfx(AudioController.Sfx.transition);
+    }
+    public void PlayTimelineCinematicStart()
+    {
+        timelineFirstCutscene.Play();
     }
     public void HoverSelection()
     {
